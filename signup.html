@@ -5,34 +5,57 @@
   <meta charset="utf-8">
   <title>signup</title>
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+  <script>
+    $(function() {
+      $('body').fadeIn();
+    });
+  </script>
+
 </head>
 
 <body>
+  <div class="main">
+    <div class="wrapper">
 
-  <form method="post" action="/">
+      <form method="post" action="/" class="col s12 grey lighten-5">
 
-    <img class="" src="img/logo.png" alt="" width="100" height="100">
-    <h1 class="">Sign Up to My Newsletter!</h1>
+        <img class="" src="img/logo.png" alt="" width="100" height="100">
+        <h3 class="">Sign Up to My Newsletter!</h3>
 
-    <div class="group">
-      <input type="text" name="fName" required autofocus><span class="highlight"></span><span class="bar"></span>
-      <label>First Name</label>
+        <div class="row">
+          <div class="input-field col s6">
+            <input name="fName" id="last_name" type="text" class="validate" required autofocus>
+            <label for="last_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input name="lName" id="last_name" type="text" class="validate" required>
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="email" id="email" type="email" class="validate" required>
+            <label for="email">Email</label>
+            <span class="helper-text" data-error="Not a valid email address" data-success="right"></span>
+          </div>
+        </div>
+
+        <button class="btn waves-effect blue darken-4 btn-large" type="submit">Sign Me Up!</button>
+
+      </form>
+
     </div>
-    <div class="group">
-      <input type="text" name="lName" required><span class="highlight"></span><span class="bar"></span>
-      <label>Last Name</label>
-    </div>
-    <div class="group">
-      <input type="email" name="email" required><span class="highlight"></span><span class="bar"></span>
-      <label>Email</label>
-    </div>
-    <button type="submit"  class="button buttonBlue">Sign Me Up!
-      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-    </button>
-  </form>
-
-  <script src="js/form.js"></script>
+  </div>
 </body>
 
 </html>
