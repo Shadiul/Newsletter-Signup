@@ -18,7 +18,7 @@ form {
   width: 380px;
   margin: 4em auto;
   padding: 3em 2em 2em 2em;
-  box-shadow: #9e9e9e  0px 10px 10px 0px, #9e9e9e 0px 1px 5px 0px;
+  box-shadow: #9e9e9e 0px 10px 10px 0px, #9e9e9e 0px 1px 5px 0px;
   text-align: center;
 }
 
@@ -26,26 +26,21 @@ h3 {
   margin-bottom: 3rem;
 }
 
-.error{
+.error {
   color: red;
 }
 
-.error-light{
+.error-light {
   color: #ffebee
 }
 
-.success-light{
+.success-light {
   color: #e8f5e9
 }
-
 
 button {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 3rem;
   cursor: pointer;
-}
-
-body{
-    display: none;
 }
