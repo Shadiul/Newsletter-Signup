@@ -5,7 +5,7 @@
     <img src="/homepage.png"</img>
 </div>
 
-## Compose Page
+## Success Page
 <div align="center">
     <img src="/success.png"</img>
 </div>
